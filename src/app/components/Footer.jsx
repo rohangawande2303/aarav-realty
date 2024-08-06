@@ -78,7 +78,7 @@ const Footer = () => {
               <li className="my-2 hover:text-gray-300 transition-all duration-300">
                 <a
                   className="text-base flex items-center justify-center md:justify-start gap-2"
-                  href="mailto:socialpulse23@gmail.com"
+                  href="mailto:aarav.enterprises1704@gmail.com"
                 >
                   <FaEnvelope className="text-xl" />{" "}
                   aarav.enterprises1704@gmail.com
