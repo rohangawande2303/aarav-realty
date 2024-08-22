@@ -89,14 +89,14 @@ const Footer = () => {
                   <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
-                      href="https://www.facebook.com/profile.php?id=61553120560771&mibextid=ZbWKwL"
+                      href="https://www.facebook.com/aaravrealty.in?mibextid=ZbWKwL"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaFacebook className="w-5 h-5 text-black" />
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
                       href="https://www.threads.net/@socialpulseagency.in"
@@ -105,11 +105,11 @@ const Footer = () => {
                     >
                       <FaThreads className="w-5 h-5 text-black" />
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
-                      href="https://www.instagram.com/socialpulseagency.in/"
+                      href="https://www.instagram.com/aaravrealty.in?igsh=MTFsZHY5YnptbTd5Zw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import companyImage from "../../images/company.jpg";
+// import companyImage from "../../images/company.jpg";
 import founderImage from "../../images/founder.jpg";
+import logo from "../../images/aarav-realty-logo.png";
 
 const About = () => {
   return (
@@ -14,9 +15,10 @@ const About = () => {
 
         <div className="mb-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6 pt-8">
-            <div className="relative w-full md:w-1/3 h-64 md:h-80">
+            <div className="relative w-full md:w-1/3 h-64 md:h-96">
               <Image
-                src={companyImage}
+                // src={companyImage}
+                src={logo}
                 alt="Our Company"
                 layout="fill"
                 objectFit="cover"
