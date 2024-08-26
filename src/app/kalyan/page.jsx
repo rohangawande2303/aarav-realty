@@ -151,7 +151,7 @@ Balaji Exotica is not just about beautifully designed apartments; it also offers
           key={projectIndex}
           className="project-card p-4 flex flex-col md:flex-row items-center mb-12"
         >
-          <div className="carousel flex items-center justify-center md:w-1/2 relative overflow-hidden">
+          <div className="carousel flex items-center justify-center md:w-1/2 relative overflow-hidden ">
             <div
               className="carousel-inner flex transition-transform duration-500 ease-in-out"
               style={{
