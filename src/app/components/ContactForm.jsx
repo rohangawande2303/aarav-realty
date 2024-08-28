@@ -56,7 +56,7 @@ export default function ContactForm() {
                 <FiPhoneCall className="w-6 h-6" />
                 <div>
                   <a href="tel:02248900105" className="hover:underline">
-                    9892537787 , 7506505709
+                    9892537787 , 7506929394
                   </a>
                   <p>Mon to Sun 10:30AM to 7:30PM</p>
                 </div>
