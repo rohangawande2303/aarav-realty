@@ -112,7 +112,9 @@ export default function Navbar() {
       </div>
       <div className="flex items-center mr-4">
         <Link
-          href="https://wa.me/yourwhatsappnumber"
+          href="https://api.whatsapp.com/send?phone=7506929394&text=I%20came%20across%20your%20website%20,I%20would%20like%20to%20have%20more%20information%20about%20your%20business"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-green-500 text-white px-4 py-2 rounded hidden md:flex items-center hover:bg-green-600 transition-colors duration-300"
         >
           <FaWhatsapp className="mr-2" />
