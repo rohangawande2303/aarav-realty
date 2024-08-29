@@ -2,16 +2,17 @@
 
 import React from "react";
 import Image from "next/image";
-import featuredProjectImage from "../../images/featured-projects.jpg";
+import featuredProjectImage from "../../images/featured-project1.jpg";
 
 export default function FeaturedProject() {
   return (
     <div
       id="featured-projects"
-      className="p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center"
+      className="p-6 md:p-12 lg:p-16 bg-gray-200 flex flex-col md:flex-row items-center justify-center"
+      style={{ minHeight: "80vh" }} // Adjust this value to control the overall height
     >
-      <div className="w-full h-[40vh] md:h-[60vh] p-4 flex items-center justify-center">
-        <div className="relative w-full h-full rounded-lg shadow-lg transform">
+      <div className="w-full md:w-1/2 h-[60vh] md:h-[50vh] p-6 md:p-8 lg:p-12 flex items-center justify-center">
+        <div className="relative w-full h-full rounded-lg shadow-lg overflow-hidden">
           <Image
             src={featuredProjectImage}
             alt="Featured Project"
@@ -21,7 +22,7 @@ export default function FeaturedProject() {
           />
         </div>
       </div>
-      <div className="w-full p-4 md:p-8 text-black text-center md:text-left">
+      <div className="w-full md:w-1/2 p-6 md:p-8 lg:p-12 text-black text-center md:text-left">
         <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6">
           Featured Project
         </h2>
