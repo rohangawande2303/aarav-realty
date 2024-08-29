@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import featuredProjectImage from "../../images/featured-project1.jpg";
+import featuredProjectImageMobile from "../../images/featured-project-mobile.jpg"; // Add a mobile-specific image
 
 export default function FeaturedProject() {
   return (
@@ -18,7 +19,14 @@ export default function FeaturedProject() {
             alt="Featured Project"
             layout="fill"
             objectFit="cover"
-            className="rounded-lg"
+            className="hidden md:block rounded-lg" // Hidden on mobile, shown on medium and larger devices
+          />
+          <Image
+            src={featuredProjectImageMobile}
+            alt="Featured Project Mobile"
+            layout="fill"
+            objectFit="cover"
+            className="block md:hidden rounded-lg" // Shown on mobile, hidden on medium and larger devices
           />
         </div>
       </div>
