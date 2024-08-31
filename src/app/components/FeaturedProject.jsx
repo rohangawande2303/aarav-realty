@@ -12,7 +12,7 @@ export default function FeaturedProject() {
       className="p-6 md:p-12 lg:p-16 bg-gray-200 flex flex-col md:flex-row items-center justify-center"
       style={{ minHeight: "80vh" }} // Adjust this value to control the overall height
     >
-      <div className="w-full md:w-1/2 h-[60vh] md:h-[50vh] p-6 md:p-8 lg:p-12 flex items-center justify-center">
+      <div className="w-full md:w-1/2 h-[80vh] md:h-[50vh] p-4 md:p-8 lg:p-12 flex items-center justify-center">
         <div className="relative w-full h-full rounded-lg shadow-lg overflow-hidden">
           <Image
             src={featuredProjectImage}
