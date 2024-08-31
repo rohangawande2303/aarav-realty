@@ -49,8 +49,8 @@ export default function Navbar() {
   }, [router.pathname, scrollTarget]);
 
   return (
-    <nav className="bg-white text-black p-4 flex items-center justify-between md:justify-around fixed top-0 left-0 right-0 z-50 shadow-md">
-      <div className="flex items-center ml-4">
+    <nav className="bg-white text-black pt-2 pb-2 md:p-4 flex items-center justify-between md:justify-around fixed top-0 left-0 right-0 z-50 shadow-md">
+      <div className="flex items-center pl-4">
         <Link
           href="/"
           className="cursor-pointer flex items-center"
@@ -60,9 +60,9 @@ export default function Navbar() {
             priority
             src={logo}
             alt="Logo"
-            width={100} // Increased size
-            height={80} // Increased size
-            className="w-20 h-14 md:w-16 md:h-14" // Adjusted for responsive sizes
+            width={70} // Original size
+            height={50} // Original size
+            className="w-16 h-12 md:w-16 md:h-12" // Responsive size adjusted back to original
           />
           <span className="text-black text-xl ml-2 hidden md:inline">
             Aarav Realty
@@ -110,7 +110,7 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
-      <div className="flex items-center mr-4">
+      <div className="flex items-center">
         <Link
           href="https://api.whatsapp.com/send?phone=7506929394&text=I%20came%20across%20your%20website%20,I%20would%20like%20to%20have%20more%20information%20about%20your%20business"
           target="_blank"
@@ -120,7 +120,9 @@ export default function Navbar() {
           <FaWhatsapp className="mr-2" />
           WhatsApp
         </Link>
-        <div className="md:hidden">
+        <div className="md:hidden ml-4 pr-8">
+          {" "}
+          {/* Adjusted margin-left for closer spacing */}
           <button onClick={toggleMenu} className="text-black">
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>

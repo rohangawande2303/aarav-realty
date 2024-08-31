@@ -5,7 +5,7 @@ import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-18 bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-16 bg-white">
       <Banner />
       <section
         id="projects"
