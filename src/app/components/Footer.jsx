@@ -96,16 +96,6 @@ const Footer = () => {
                       <FaFacebook className="w-5 h-5 text-black" />
                     </a>
                   </li>
-                  {/* <li>
-                    <a
-                      className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
-                      href="https://www.threads.net/@socialpulseagency.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaThreads className="w-5 h-5 text-black" />
-                    </a>
-                  </li> */}
                   <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
@@ -116,7 +106,7 @@ const Footer = () => {
                       <FaInstagram className="w-5 h-5 text-black" />
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
                       href="https://www.linkedin.com/company/social-pulse-agency/"
@@ -125,8 +115,8 @@ const Footer = () => {
                     >
                       <FaLinkedinIn className="w-5 h-5 text-black" />
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a
                       className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
                       href="https://www.youtube.com/@SocialPulse23"
@@ -135,7 +125,7 @@ const Footer = () => {
                     >
                       <FaYoutube className="w-5 h-5 text-black" />
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
             </ul>
