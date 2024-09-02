@@ -45,7 +45,7 @@ const Banner = () => {
       className={`relative w-full ${
         isMobile
           ? "h-[100vh]"
-          : "h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[80vh]"
+          : "h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[93vh]"
       } mt-0`}
     >
       <div className="absolute inset-0 w-full h-full">
