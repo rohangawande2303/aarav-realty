@@ -49,7 +49,7 @@ export default function Navbar() {
   }, [router.pathname, scrollTarget]);
 
   return (
-    <nav className="bg-white text-black pt-2 pb-2 md:p-4 flex items-center justify-between md:justify-around fixed top-0 left-0 right-0 z-50 shadow-md">
+    <nav className="bg-white text-black pt-2 pb-2 md:p-4 flex items-center justify-between md:justify-around fixed top-0 left-0 right-0 z-50 shadow-md w-full">
       <div className="flex items-center pl-4">
         <Link
           href="/"
@@ -121,8 +121,6 @@ export default function Navbar() {
           WhatsApp
         </Link>
         <div className="md:hidden ml-4 pr-8">
-          {" "}
-          {/* Adjusted margin-left for closer spacing */}
           <button onClick={toggleMenu} className="text-black">
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
@@ -132,58 +130,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-// "use client";
-
-// import React, { useState } from "react";
-// import Link from "next/link";
-// import { FaBars, FaWhatsapp } from "react-icons/fa";
-// import HamburgerMenu from "./HamburgerMenu";
-// import Image from "next/image";
-
-// export default function Navbar() {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   return (
-//     <nav className="bg-black text-white p-4 flex items-center justify-between">
-//       <div className="flex items-center">
-//         <Link className="cursor-pointer" href="/">
-//           <Image
-//             priority
-//             src="/images/logo1.png"
-//             alt="Logo"
-//             width={90}
-//             height={90}
-//             className="w-10 h-10 md:w-16 md:h-16"
-//           />
-//         </Link>
-//         <Link href="/" className="text-white text-xl md:text-2xl ml-3">
-//           Aarav Realty
-//         </Link>
-//       </div>
-//       <div className="hidden md:flex flex-grow justify-center space-x-4">
-//         <Link href="/">Home</Link>
-//         <Link href="/about">About Us</Link>
-//         <Link href="#projects">Projects</Link>
-//         <Link href="#featured-projects">Featured Projects</Link>
-//         <Link href="#contact">Contact</Link>
-//       </div>
-//       <div className="flex items-center space-x-4">
-//         <div className="hidden md:flex">
-//           <Link
-//             href="https://wa.me/yourwhatsappnumber"
-//             className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600"
-//           >
-//             <FaWhatsapp size={24} />
-//           </Link>
-//         </div>
-//         <div className="md:hidden flex items-center">
-//           <button onClick={() => setMenuOpen(!menuOpen)}>
-//             <FaBars size={24} />
-//           </button>
-//         </div>
-//       </div>
-//       {menuOpen && <HamburgerMenu />}
-//     </nav>
-//   );
-// }
