@@ -20,7 +20,7 @@ const Banner = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Adjust breakpoint for mobile
       const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
-      setBannerHeight(`calc(100vh - ${navbarHeight + 2}px)`); // Subtract 2 additional pixels
+      setBannerHeight(`calc(100vh - ${navbarHeight + 2}px)`); // Adjust banner height
     };
 
     window.addEventListener("resize", handleResize);
@@ -45,7 +45,7 @@ const Banner = () => {
 
   return (
     <div
-      className={`relative w-full mt-0 overflow-hidden`}
+      className="relative w-full mt-0 overflow-hidden"
       style={{ height: bannerHeight }}
     >
       <div className="absolute inset-0 w-full h-full">
