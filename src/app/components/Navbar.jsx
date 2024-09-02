@@ -53,7 +53,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Link
           href="/"
-          className="cursor-pointer flex items-center"
+          className="cursor-pointer flex items-center pl-4 md:pl-0"
           onClick={(e) => handleScroll(e, "#home")}
         >
           <Image

@@ -14,14 +14,17 @@ const mobileImages = [mobile1, mobile2, mobile3];
 const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [bannerHeight, setBannerHeight] = useState("100vh");
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Adjust breakpoint for mobile
+      const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+      setBannerHeight(`calc(100vh - ${navbarHeight + 2}px)`); // Subtract 2 additional pixels
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize();
+    handleResize(); // Set the initial height
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -42,11 +45,8 @@ const Banner = () => {
 
   return (
     <div
-      className={`relative w-full ${
-        isMobile
-          ? "h-[100vh]"
-          : "h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[92vh]"
-      } mt-0 overflow-hidden`}
+      className={`relative w-full mt-0 overflow-hidden`}
+      style={{ height: bannerHeight }}
     >
       <div className="absolute inset-0 w-full h-full">
         {imagesToShow.map((image, index) => (
