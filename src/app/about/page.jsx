@@ -38,7 +38,7 @@ const About = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
             <div className="relative w-full md:w-1/3 h-64 md:h-80">
               <Image
@@ -59,7 +59,7 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <Footer /> */}
     </>
