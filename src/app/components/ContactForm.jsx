@@ -11,17 +11,44 @@ export default function ContactForm() {
     email: "",
     phone: "",
     interest: "",
-    message: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Logic to handle form submission, e.g., send to Google Sheets
+    setLoading(true);
+    setMessage("");
+
+    try {
+      // Replace with your actual API endpoint
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      setMessage(result.message || "Form submitted successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        interest: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setMessage("Failed to submit form. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -81,9 +108,12 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit} className="space-y-4 text-black">
               <div className="flex flex-wrap -mx-2">
                 <div className="w-full md:w-1/2 px-2 mb-4">
-                  <label className="block mb-1">Name*</label>
+                  <label className="block mb-1" htmlFor="name">
+                    Name*
+                  </label>
                   <input
                     type="text"
+                    id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
@@ -92,9 +122,12 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-2 mb-4">
-                  <label className="block mb-1">Email*</label>
+                  <label className="block mb-1" htmlFor="email">
+                    Email*
+                  </label>
                   <input
                     type="email"
+                    id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
@@ -103,9 +136,12 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-2 mb-4">
-                  <label className="block mb-1">Mobile*</label>
+                  <label className="block mb-1" htmlFor="phone">
+                    Mobile*
+                  </label>
                   <input
                     type="text"
+                    id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
@@ -114,32 +150,35 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-2 mb-4">
-                  <label className="block mb-1">Subject*</label>
-                  <input
-                    type="text"
+                  <label className="block mb-1" htmlFor="interest">
+                    Interest*
+                  </label>
+                  <select
+                    id="interest"
                     name="interest"
                     value={formData.interest}
                     onChange={handleChange}
                     className="border w-full p-2 rounded"
                     required
-                  />
+                  >
+                    <option value="">Select an option</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                    <option value="4BHK">4BHK</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Others">Others</option>
+                  </select>
                 </div>
-              </div>
-              <div className="px-2 mb-4">
-                <label className="block mb-1">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="border w-full p-2 rounded"
-                />
               </div>
               <button
                 type="submit"
                 className="bg-blue-500 text-white p-2 rounded mx-2"
+                disabled={loading}
               >
-                Submit
+                {loading ? "Submitting..." : "Submit"}
               </button>
+              {message && <p className="text-red-500">{message}</p>}
             </form>
           </div>
         </div>
