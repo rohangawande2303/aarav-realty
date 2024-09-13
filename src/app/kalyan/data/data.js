@@ -21,6 +21,10 @@ import project7Img3 from "../../../images/kalyan-project7-3.jpg";
 import project8Img1 from "../../../images/kalyan-project8-1.jpg";
 import project8Img2 from "../../../images/kalyan-project8-2.jpg";
 import project8Img3 from "../../../images/kalyan-project8-3.jpg";
+import project9Img1 from "../../../images/kalyan-project9-1.jpg";
+import project9Img2 from "../../../images/kalyan-project9-2.jpg";
+import project9Img3 from "../../../images/kalyan-project9-3.jpg";
+import project9Img4 from "../../../images/kalyan-project9-4.jpg";
 
 export const kalyanData = [
   {
@@ -80,18 +84,12 @@ Balaji Exotica is not just about beautifully designed apartments; it also offers
     link: "/property/tharwani-majestic-towers-3-bhk",
   },
   {
-    title: "Sai World Dreams",
-    address:
-      "Manpada, Kalyan - Shilphata Rd, Thane, Kalyan, 421301, Maharashtra.",
-    description: `SAI WORLD DREAMS by the SAI WORLD GROUP is a premium residential project located in the thriving area of Dombivli. This expansive development features high-rise towers that offer stunning views and unparalleled living experiences. The project includes 1 BHK and 2 BHK apartments designed with meticulous attention to detail to ensure maximum comfort and convenience for residents. With world-class amenities and a prime location, SAI WORLD DREAMS offers an exceptional living experience that meets the highest standards of luxury and sophistication.`,
-    images: [project7Img1, project7Img2, project7Img3],
-    link: "/property/manpada-kalyan-shilphata-rd-thane-dombivli",
-  },
-  {
-    title: "SOMAIYA OCEANIA",
-    address: "Near Wagle Estate, Thane, Kalyan, 421301, Maharashtra.",
-    description: `SOMAIYA OCEANIA by SOMAIYA GROUP is an exclusive residential project located in the prime area of Thane. This project is designed to offer an exceptional living experience, with a focus on luxury, comfort, and modern amenities. The project features spacious 2 BHK and 3 BHK apartments that are designed to meet the highest standards of living. Residents of SOMAIYA OCEANIA can enjoy a range of amenities including a swimming pool, gymnasium, and landscaped gardens. The project's strategic location ensures easy access to key areas in Thane, making it a highly desirable residential choice.`,
-    images: [project8Img1, project8Img2, project8Img3],
-    link: "/property/near-wagle-estate-thane",
+    title: "Mangeshi Valley",
+    address: "Mangeshi Valley, Thane, Kalyan, 421301, Maharashtra.",
+    description: `Introducing MANGESHI VALLEY, an upcoming project brought to you by the renowned MANGESHI GROUP. Nestled in the serene Vasant Valley road, Kalyan (w), this pre-launch venture promises a lifestyle of convenience and luxury.
+
+Situated on a sprawling 1-acre land parcel, MANGESHI VALLEY boasts a towering G+21 structure, offering a picturesque view of the surroundings. Its strategic location ensures proximity to key landmarks - just a 3-minute drive from Mumbai University, 5 minutes to National Hospital, D-MART, Wellness Forever, St. VIBGOR School, UNION Bank, and Carnival, making everyday errands a breeze. Additionally, it's conveniently located within 10 minutes from Durgadi Circle and the Ring Road Highway, and 15 minutes from both Kalyan Station and Nashik Highway, ensuring easy connectivity.`,
+    images: [project9Img1, project9Img2, project9Img3, project9Img4],
+    link: "/property/mangeshi-valley",
   },
 ];

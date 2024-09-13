@@ -60,14 +60,15 @@ export default function Navbar() {
             priority
             src={logo}
             alt="Logo"
-            width={70} // Original size
-            height={50} // Original size
-            className="w-16 h-12 md:w-16 md:h-12" // Responsive size adjusted back to original
+            width={64} // Maintains aspect ratio
+            height={64} // Maintains aspect ratio
+            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" // Responsive sizes for different screens
           />
-          <span className="text-black text-xl ml-2 hidden md:inline">
+          <span className="text-black text-base sm:text-lg md:text-xl ml-2 hidden md:inline">
             Aarav Realty
           </span>
         </Link>
+
         <div className="hidden md:flex space-x-8">
           <Link
             href="/"
