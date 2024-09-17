@@ -120,7 +120,7 @@ export default function ContactForm({ showDetails = true }) {
           )}
 
           {/* Contact Form */}
-          <div className="w-full md:w-[100%] pt-8 pb-8 flex flex-col h-auto justify-center items-center">
+          <div className="w-full md:w-[100%] pt-8 pb-8 pl-8 pr-8 md:pl-0 md:pr-0 flex flex-col h-auto justify-center items-center">
             <form
               onSubmit={handleSubmit}
               className="space-y-6 text-black w-full max-w-md"
