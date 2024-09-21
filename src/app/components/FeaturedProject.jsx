@@ -32,7 +32,7 @@ export default function FeaturedProject() {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
         setFadeClass("fade-in");
-      }, 500); // Match the duration of the fade-out animation
+      }, 500);
     }, 4000);
 
     return () => clearInterval(interval);

@@ -84,6 +84,23 @@ const Footer = () => {
                   aarav.enterprises1704@gmail.com
                 </a>
               </li>
+
+              {/* Managed by Social Pulse */}
+              <li className="my-2 mt-4">
+                <p className="text-base">
+                  Website managed by{" "}
+                  <a
+                    href="https://www.socialpulseagency.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-300 transition-all duration-300"
+                  >
+                    Social Pulse Agency
+                  </a>
+                  .
+                </p>
+              </li>
+
               <li className="mt-8">
                 <ul className="flex justify-center gap-6 md:gap-6 items-center">
                   <li>
@@ -106,26 +123,6 @@ const Footer = () => {
                       <FaInstagram className="w-5 h-5 text-black" />
                     </a>
                   </li>
-                  {/* <li>
-                    <a
-                      className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
-                      href="https://www.linkedin.com/company/social-pulse-agency/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedinIn className="w-5 h-5 text-black" />
-                    </a>
-                  </li> */}
-                  {/* <li>
-                    <a
-                      className="flex items-center justify-center w-10 h-10 text-xl rounded-full border border-black transition-all duration-300 hover:bg-gray-200" // Normal hover effect
-                      href="https://www.youtube.com/@SocialPulse23"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaYoutube className="w-5 h-5 text-black" />
-                    </a>
-                  </li> */}
                 </ul>
               </li>
             </ul>
