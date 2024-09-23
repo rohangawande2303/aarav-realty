@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="ml-3 text-center md:text-left">
               <div className="text-black text-xl md:text-2xl">Aarav Realty</div>
               <p className="text-base mt-2 hover:text-gray-300 transition-all duration-300">
-                We&apos;re Aarav Realty, a digital marketing agency fueled by
+                At Aarav Realty, we specialize in real estate services fueled by
                 passion and powered by expertise.
               </p>
             </div>
